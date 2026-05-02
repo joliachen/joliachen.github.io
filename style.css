@@ -712,6 +712,14 @@ ul { list-style: none; }
   margin-top: 0.15rem;
 }
 
+.project-actions {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
+  flex-wrap: wrap;
+  margin-top: 0.15rem;
+}
+
 /* ============================================================
    MISC TAB
    ============================================================ */

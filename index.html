@@ -90,13 +90,14 @@
           <div class="bio">
             <p>I'm a Computer Science student at <a href="https://shanghai.nyu.edu" target="_blank" rel="noopener">NYU Shanghai</a>, graduating May 2026, and an incoming Robotics PhD student at <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a>, where I will be advised by <a href="https://www.siddkaramcheti.com/" target="_blank" rel="noopener">Prof. Siddharth Karamcheti</a>. My research centers on <strong>human-centered robot learning</strong>:</p>
             <ul class="bio-bullets">
-              <li><strong>Phase 1 &mdash; Learning from Humans:</strong> enabling robots to learn from humans as a data source (multimodal demonstrations), a data coach (guiding targeted collection), and an inference-time guide (real-time corrections).</li>
-              <li><strong>Phase 2 &mdash; Personalized Interaction:</strong> robots that align with individual preferences &mdash; from home assistants that learn your habits to creative partners that reflect your style.</li>
+              <li><strong>Phase 1: Learning from Humans:</strong> enabling robots to learn from humans as a data source (multimodal demonstrations), a data coach (guiding targeted collection), and an inference-time guide (real-time corrections).</li>
+              
+              <li><strong>Phase 2: Personalized Interaction:</strong> robots that align with individual preferences. They range from home assistants that learn your habits to creative partners that reflect your style.</li>
             </ul>
 
-            <p>Currently I work with <a href="#" target="_blank" rel="noopener">Prof. Shengjie Wang</a> at <a href="https://shanghai.nyu.edu" target="_blank" rel="noopener">NYU Shanghai</a> on injecting in-context learning into vision-language-action models for long-horizon tasks. Previously I was at NYU's <a href="https://www.lerrelpinto.com" target="_blank" rel="noopener">GRAIL Lab</a> with <a href="https://www.lerrelpinto.com" target="_blank" rel="noopener">Prof. Lerrel Pinto</a>, building systems where robots learn force-sensitive manipulation from human touch. I also worked with <a href="https://whongyi.github.io/" target="_blank" rel="noopener">Prof. Hongyi Wen</a> at <a href="https://shanghai.nyu.edu" target="_blank" rel="noopener">NYU Shanghai</a>'s <a href="#" target="_blank" rel="noopener">MAPS Lab</a>, where I contributed to <a href="https://arxiv.org/abs/2510.18433" target="_blank" rel="noopener">ImageGem</a> (ICCV 2025) and conducted user studies on human-in-the-loop image generation.</p>
+            <p>Currently I work with <a href="#" target="_blank" rel="noopener">Prof. Shengjie Wang</a> at <a href="https://shanghai.nyu.edu" target="_blank" rel="noopener">NYU Shanghai</a> on injecting in-context learning into vision-language-action models for long-horizon tasks. Previously I was at NYU's <a href="https://www.lerrelpinto.com" target="_blank" rel="noopener">GRAIL Lab</a> with <a href="https://www.lerrelpinto.com" target="_blank" rel="noopener">Prof. Lerrel Pinto</a>, building systems where robots learn force-sensitive manipulation from human touch. I also worked with <a href="https://whongyi.github.io/" target="_blank" rel="noopener">Prof. Hongyi Wen</a> at <a href="https://shanghai.nyu.edu" target="_blank" rel="noopener">NYU Shanghai</a>'s <a href="#" target="_blank" rel="noopener">MAPS Lab</a>, where I contributed to <a href="https://arxiv.org/abs/2510.18433" target="_blank" rel="noopener">ImageGem</a> (ICCV 2025) and conducted research on human-in-the-loop image generation.</p>
 
-            <p>Outside the lab, I am a city-walk enthusiast. I play badminton, run hurdles, and paint. </p>
+<p>Outside the lab, I enjoy city walks, playing badminton, and capturing everyday moments through writing, photography, and painting.</p>
           </div>
         </div>
 
@@ -175,7 +176,7 @@
               <a href="https://github.com/feel-the-force-ftf/feel-the-force" class="link-btn" target="_blank" rel="noopener">Code</a>
             </div>
             <div class="abstract" id="abs-ftf">
-              <p>FTF learns force-sensitive manipulation from human tactile demonstrations using a low-cost tactile glove and vision-based hand pose estimation. A closed-loop Transformer policy predicts robot trajectories and contact forces, achieving 77% success across five manipulation tasks.</p>
+              <p>Controlling fine-grained forces during manipulation remains a core challenge in robotics. While robot policies learned from robot-collected data or simulation show promise, they struggle to generalize across the diverse range of real-world interactions. Learning directly from humans offers a scalable solution, enabling demonstrators to perform skills in their natural embodiment and in everyday environments. However, visual demonstrations alone lack the information needed to infer precise contact forces. We present FeelTheForce (FTF): a robot learning system that models human tactile behavior to learn force-sensitive manipulation. Using a tactile glove to measure contact forces and a vision-based model to estimate hand pose, we train a closed-loop policy that continuously predicts the forces needed for manipulation. This policy is re-targeted to a Franka Panda robot with tactile gripper sensors using shared visual and action representations. At execution, a PD controller modulates gripper closure to track predicted forces &mdash; enabling precise, force-aware control. Our approach grounds robust low-level force control in scalable human supervision, achieving a 77% success rate across 5 force-sensitive manipulation tasks.</p>
             </div>
           </div>
         </div>
@@ -208,10 +209,11 @@
                 Abstract <span class="toggle-arrow">&#9662;</span>
               </button>
               <a href="https://arxiv.org/abs/2603.26660" class="link-btn" target="_blank" rel="noopener">Paper</a>
-              <a href="https://ruka-hand-v2.github.io/" class="link-btn disabled">Project Page</a>
+              <a href="https://ruka-hand-v2.github.io/" class="link-btn" target="_blank" rel="noopener">Project Page</a>
+              
             </div>
             <div class="abstract" id="abs-ruka">
-              <p>RUKA-v2 is an open-source tendon-driven dexterous robotic hand with wrist and abduction capabilities. Includes a real-time teleoperation system mapping human arm and hand motion to Franka + RUKA via Meta Quest.</p>
+              <p>Lack of accessible and dexterous robot hardware has been a significant bottleneck to achieving human-level dexterity in robots. Last year, we released Ruka, a fully open-sourced, tendon-driven humanoid hand with 11 degrees of freedom &mdash; 2 per finger and 3 at the thumb &mdash; buildable for under $1,300. Despite these contributions, Ruka lacked two degrees of freedom essential for closely imitating human behavior: wrist mobility and finger adduction/abduction. In this paper, we introduce Ruka-v2: a fully open-sourced, tendon-driven humanoid hand featuring a decoupled 2-DOF parallel wrist and abduction/adduction at the fingers. The parallel wrist adds smooth, independent flexion/extension and radial/ulnar deviation, enabling manipulation in confined environments such as cabinets. Abduction enables motions such as grasping thin objects, in-hand rotation, and calligraphy. We evaluate Ruka-v2 against Ruka through user studies on teleoperated tasks, finding a 51.3% reduction in completion time and a 21.2% increase in success rate. We further demonstrate its full range of applications for robot learning: bimanual and single-arm teleoperation across 13 dexterous tasks, and autonomous policy learning on 3 tasks.</p>
             </div>
           </div>
         </div>
@@ -247,10 +249,11 @@
                 Abstract <span class="toggle-arrow">&#9662;</span>
               </button>
               <a href="https://arxiv.org/abs/2510.18433" class="link-btn" target="_blank" rel="noopener">Paper</a>
-              <a href="https://maps-research.github.io/imagegem-iccv2025/" class="link-btn disabled">Project Page</a>
+              <a href="https://maps-research.github.io/imagegem-iccv2025/" class="link-btn" target="_blank" rel="noopener">Project Page</a>
+              <a href="https://github.com/MAPS-research/imagegem" class="link-btn" target="_blank" rel="noopener">Code</a>
             </div>
             <div class="abstract" id="abs-imagegem">
-              <p>ImageGem introduces a dataset for in-the-wild generative image interaction. Built a personalized image retrieval and generative-model recommendation pipeline using collaborative filtering and VLM reranking.</p>
+              <p>We introduce ImageGem, a dataset for studying generative models that understand fine-grained individual preferences. We posit that a key challenge hindering the development of such a generative model is the lack of in-the-wild and fine-grained user preference annotations. Our dataset features real-world interaction data from 57K users, who collectively have built 242K customized LoRAs, written 3M text prompts, and created 5M generated images. With user preference annotations from our dataset, we were able to train better preference alignment models. In addition, leveraging individual user preference, we investigated the performance of retrieval models and a vision-language model on personalized image retrieval and generative model recommendation. Finally, we propose an end-to-end framework for editing customized diffusion models in a latent weight space to align with individual user preferences. Our results demonstrate that the ImageGem dataset enables, for the first time, a new paradigm for generative model personalization.</p>
             </div>
           </div>
         </div>
@@ -296,7 +299,7 @@
               <a href="https://github.com/feel-the-force-ftf/feel-the-force" class="link-btn" target="_blank" rel="noopener">Code</a>
             </div>
             <div class="abstract" id="abs-ftf-tab">
-              <p>FTF learns force-sensitive manipulation from human tactile demonstrations using a low-cost tactile glove and vision-based hand pose estimation. A closed-loop Transformer policy predicts robot trajectories and contact forces, achieving 77% success across five manipulation tasks.</p>
+              <p>Controlling fine-grained forces during manipulation remains a core challenge in robotics. While robot policies learned from robot-collected data or simulation show promise, they struggle to generalize across the diverse range of real-world interactions. Learning directly from humans offers a scalable solution, enabling demonstrators to perform skills in their natural embodiment and in everyday environments. However, visual demonstrations alone lack the information needed to infer precise contact forces. We present FeelTheForce (FTF): a robot learning system that models human tactile behavior to learn force-sensitive manipulation. Using a tactile glove to measure contact forces and a vision-based model to estimate hand pose, we train a closed-loop policy that continuously predicts the forces needed for manipulation. This policy is re-targeted to a Franka Panda robot with tactile gripper sensors using shared visual and action representations. At execution, a PD controller modulates gripper closure to track predicted forces &mdash; enabling precise, force-aware control. Our approach grounds robust low-level force control in scalable human supervision, achieving a 77% success rate across 5 force-sensitive manipulation tasks.</p>
             </div>
           </div>
         </div>
@@ -306,7 +309,7 @@
           <div class="pub-cover-wrap">
             <span class="venue-cover-badge">Under Review</span>
             <video class="pub-cover pub-cover-video" autoplay muted loop playsinline>
-              <source src="assets/publications/ruka-v2.mov" type="video/quicktime">
+
               <source src="assets/publications/ruka-v2.mp4" type="video/mp4">
             </video>
             <div class="pub-cover-fallback" style="display:none">RV2</div>
@@ -330,10 +333,10 @@
                 Abstract <span class="toggle-arrow">&#9662;</span>
               </button>
               <a href="https://arxiv.org/abs/2603.26660" class="link-btn" target="_blank" rel="noopener">Paper</a>
-              <a href="#" class="link-btn disabled">Project Page</a>
+              <a href="https://ruka-hand-v2.github.io/" class="link-btn" target="_blank" rel="noopener">Project Page</a>
             </div>
             <div class="abstract" id="abs-ruka-tab">
-              <p>RUKA-v2 is an open-source tendon-driven dexterous robotic hand with wrist and abduction capabilities. Includes a real-time teleoperation system mapping human arm and hand motion to Franka + RUKA via Meta Quest.</p>
+              <p>Lack of accessible and dexterous robot hardware has been a significant bottleneck to achieving human-level dexterity in robots. Last year, we released Ruka, a fully open-sourced, tendon-driven humanoid hand with 11 degrees of freedom &mdash; 2 per finger and 3 at the thumb &mdash; buildable for under $1,300. Despite these contributions, Ruka lacked two degrees of freedom essential for closely imitating human behavior: wrist mobility and finger adduction/abduction. In this paper, we introduce Ruka-v2: a fully open-sourced, tendon-driven humanoid hand featuring a decoupled 2-DOF parallel wrist and abduction/adduction at the fingers. The parallel wrist adds smooth, independent flexion/extension and radial/ulnar deviation, enabling manipulation in confined environments such as cabinets. Abduction enables motions such as grasping thin objects, in-hand rotation, and calligraphy. We evaluate Ruka-v2 against Ruka through user studies on teleoperated tasks, finding a 51.3% reduction in completion time and a 21.2% increase in success rate. We further demonstrate its full range of applications for robot learning: bimanual and single-arm teleoperation across 13 dexterous tasks, and autonomous policy learning on 3 tasks.</p>
             </div>
           </div>
         </div>
@@ -369,10 +372,12 @@
                 Abstract <span class="toggle-arrow">&#9662;</span>
               </button>
               <a href="https://arxiv.org/abs/2510.18433" class="link-btn" target="_blank" rel="noopener">Paper</a>
-              <a href="#" class="link-btn disabled">Project Page</a>
+              <a href="https://maps-research.github.io/imagegem-iccv2025/" class="link-btn" target="_blank" rel="noopener">Project Page</a>
+              <a href="https://github.com/MAPS-research/imagegem" class="link-btn" target="_blank" rel="noopener">Code</a>
+             
             </div>
             <div class="abstract" id="abs-imagegem-tab">
-              <p>ImageGem introduces a dataset for in-the-wild generative image interaction. Built a personalized image retrieval and generative-model recommendation pipeline using collaborative filtering and VLM reranking.</p>
+              <p>We introduce ImageGem, a dataset for studying generative models that understand fine-grained individual preferences. We posit that a key challenge hindering the development of such a generative model is the lack of in-the-wild and fine-grained user preference annotations. Our dataset features real-world interaction data from 57K users, who collectively have built 242K customized LoRAs, written 3M text prompts, and created 5M generated images. With user preference annotations from our dataset, we were able to train better preference alignment models. In addition, leveraging individual user preference, we investigated the performance of retrieval models and a vision-language model on personalized image retrieval and generative model recommendation. Finally, we propose an end-to-end framework for editing customized diffusion models in a latent weight space to align with individual user preferences. Our results demonstrate that the ImageGem dataset enables, for the first time, a new paradigm for generative model personalization.</p>
             </div>
           </div>
         </div>
@@ -445,9 +450,9 @@
                   <div class="timeline-period">Mar 2026 &ndash; Present</div>
                   <div class="timeline-role">Teaching Assistant &nbsp;&middot;&nbsp; NYU Shanghai</div>
                   <div class="timeline-advisor">Artificial Intelligence for Business &nbsp;&middot;&nbsp; MSDABC Program</div>
-                  <ul class="timeline-details">
+                  <!-- <ul class="timeline-details">
                     <li>Course assistance and student guidance</li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
 
@@ -457,9 +462,9 @@
                   <div class="timeline-period">Jan 2026 &ndash; Present</div>
                   <div class="timeline-role">Learning Assistant &nbsp;&middot;&nbsp; NYU Shanghai</div>
                   <div class="timeline-advisor">Data Structures &nbsp;&middot;&nbsp; Introduction to Computer Programming</div>
-                  <ul class="timeline-details">
+                  <!-- <ul class="timeline-details">
                     <li>Debugging support and problem-solving guidance</li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
 
@@ -468,9 +473,9 @@
                 <div class="timeline-content">
                   <div class="timeline-period">Sep 2022 &ndash; May 2023</div>
                   <div class="timeline-role">Teaching Tutor &nbsp;&middot;&nbsp; Stepping Stone Program</div>
-                  <ul class="timeline-details">
+                  <!-- <ul class="timeline-details">
                     <li>Taught programming to primary school students at local community centers weekly</li>
-                  </ul>
+                  </ul> -->
                 </div>
               </div>
 
@@ -590,7 +595,9 @@
               <p class="project-course">Computer Vision (Grad) &nbsp;&middot;&nbsp; <a href="#" target="_blank" rel="noopener">Prof. Saining Xie</a></p>
               <p class="project-term">NYU &nbsp;&middot;&nbsp; Fall 2024</p>
               <p class="project-desc">Compared W2W framework vs LoRA Negation for style unlearning; verified with CLIP + VLM metrics.</p>
-              <a href="https://github.com/joliachen/CV-Final-Style-Unlearning" class="link-btn small" target="_blank" rel="noopener">GitHub</a>
+              <div class="project-actions">
+                <a href="https://github.com/joliachen/CV-Final-Style-Unlearning" class="link-btn small" target="_blank" rel="noopener">GitHub</a>
+              </div>
             </div>
 
             <div class="project-card">
@@ -598,8 +605,10 @@
               <p class="project-course">Computer Graphics (Grad) &nbsp;&middot;&nbsp; <a href="#" target="_blank" rel="noopener">Prof. Ken Perlin</a></p>
               <p class="project-term">NYU &nbsp;&middot;&nbsp; Fall 2024</p>
               <p class="project-desc">Interactive 3D web app using raw WebGL &mdash; 3D modeling, animation, real-time rendering.</p>
-              <a href="https://github.com/joliachen/Computer-Graphics-Final-Project" class="link-btn small" target="_blank" rel="noopener">GitHub</a>
-              <a href="https://www.youtube.com/watch?v=M6d8OuTpxds" class="link-btn small" target="_blank" rel="noopener">Demo Video</a>
+              <div class="project-actions">
+                <a href="https://github.com/joliachen/Computer-Graphics-Final-Project" class="link-btn small" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://www.youtube.com/watch?v=M6d8OuTpxds" class="link-btn small" target="_blank" rel="noopener">Demo Video</a>
+              </div>
             </div>
 
             <div class="project-card">
@@ -614,7 +623,9 @@
               <p class="project-course">Machine Learning &nbsp;&middot;&nbsp; <a href="#" target="_blank" rel="noopener">Prof. Yik-Cheung Tam</a></p>
               <p class="project-term">NYU Shanghai &nbsp;&middot;&nbsp; Spring 2024</p>
               <p class="project-desc">End-to-end audio classification with Mel spectrograms, MFCCs, CNN models &mdash; <strong>79.6% test accuracy</strong>.</p>
-              <a href="https://github.com/joliachen/Machine-Learning-Final-Competition" class="link-btn small" target="_blank" rel="noopener">GitHub</a>
+              <div class="project-actions">
+                <a href="https://github.com/joliachen/Machine-Learning-Final-Competition" class="link-btn small" target="_blank" rel="noopener">GitHub</a>
+              </div>
             </div>
 
             <div class="project-card">
@@ -622,8 +633,10 @@
               <p class="project-course">Intro CS &nbsp;&middot;&nbsp; <a href="#" target="_blank" rel="noopener">Prof. Xianbin Gu</a></p>
               <p class="project-term">NYU Shanghai &nbsp;&middot;&nbsp; Fall 2023</p>
               <p class="project-desc">GUI chat app with RSA encryption, login, ELO image rating, PyGame Flappy Bird module.</p>
-              <a href="https://github.com/joliachen/ICS-Final-Project" class="link-btn small" target="_blank" rel="noopener">GitHub</a>
-              <a href="https://youtu.be/Xuh4mukh42k?si=fFSO1MvFgZHIHmHH" class="link-btn small" target="_blank" rel="noopener">Demo Video</a>
+              <div class="project-actions">
+                <a href="https://github.com/joliachen/ICS-Final-Project" class="link-btn small" target="_blank" rel="noopener">GitHub</a>
+                <a href="https://youtu.be/Xuh4mukh42k?si=fFSO1MvFgZHIHmHH" class="link-btn small" target="_blank" rel="noopener">Demo Video</a>
+              </div>
             </div>
 
           </div>
@@ -658,8 +671,8 @@
             <span class="interest-pill">Mandarin &mdash; Native</span>
           </div>
         </div>
-
-        <!-- Memes -->
+<!-- 
+        meme
         <div class="misc-section">
           <h3 class="subsection-title">Memes I like</h3>
           <div class="meme-grid">
@@ -676,11 +689,11 @@
               <span class="meme-label">add a meme</span>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Sister's portrait -->
         <div class="misc-section">
-          <h3 class="subsection-title">Portrait  &#128149;</h3>
+          <h3 class="subsection-title">Portrait </h3>
           <div class="sis-portrait-wrap">
             <img
               src="assets/misc/sis_painted_profile.jpg"

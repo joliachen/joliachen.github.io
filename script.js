@@ -161,16 +161,6 @@ document.addEventListener('DOMContentLoaded', function () {
         fallback.style.display = 'flex';
       }
     });
-    /* Also trigger fallback if no sources loaded after a short delay */
-    video.addEventListener('suspend', function () {
-      if (video.readyState === 0) {
-        video.style.display = 'none';
-        var fallback = video.nextElementSibling;
-        if (fallback && fallback.classList.contains('pub-cover-fallback')) {
-          fallback.style.display = 'flex';
-        }
-      }
-    });
   });
 
 });

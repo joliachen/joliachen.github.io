@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
       link.classList.toggle('active', link.dataset.tab === tabId);
     });
 
-    history.replaceState(null, '', '#' + tabId);
+    history.replaceState(null, '', tabId === 'about' ? window.location.pathname : '#' + tabId);
   }
 
   /* Nav link clicks */

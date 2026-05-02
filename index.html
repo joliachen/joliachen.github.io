@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zhuoran (Jolia) Chen</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ==================== NAVBAR ==================== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#about">Zhuoran Chen</a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a class="nav-link" href="#about" data-tab="about">About</a></li>
+        <li><a class="nav-link" href="#publications" data-tab="publications">Publications</a></li>
+        <li><a class="nav-link" href="#cv" data-tab="cv">CV</a></li>
+        <li><a class="nav-link" href="#misc" data-tab="misc">Misc</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark/light mode">
+        <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+      </button>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ==================== MAIN ==================== -->
+  <main class="main">
+
+    <!-- ===== TAB: ABOUT (homepage) ===== -->
+    <section id="about" class="tab-section">
+
+      <!-- 1. Intro -->
+      <div class="container about-container">
+
+        <!-- LEFT: Photo + Social -->
+        <div class="about-photo-col">
+          <div class="profile-photo-wrap">
+            <img
+              src="assets/profile.jpg"
+              alt="Zhuoran (Jolia) Chen"
+              class="profile-photo"
+              onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"
+            />
+            <div class="profile-initials" style="display:none">JC</div>
+          </div>
+
+          <div class="social-links">
+            <a href="mailto:zc2745@nyu.edu" class="social-btn" title="Email">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>zc2745@nyu.edu</span>
+            </a>
+            <a href="https://www.linkedin.com/in/zhuoran-chen-90a18a251/" class="social-btn" title="LinkedIn" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/joliachen" class="social-btn" title="GitHub" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              <span>GitHub</span>
+            </a>
+            <a href="https://x.com/JoliaChen" class="social-btn" title="Twitter / X" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l16 16"/><path d="M4 20L20 4"/></svg>
+              <span>Twitter / X</span>
+            </a>
+            <!-- <a href="assets/ZhuoranChen_CV.pdf" class="social-btn cv-btn" title="Download CV" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              <span>Download CV</span>
+            </a> -->
+          </div>
+        </div>
+
+        <!-- RIGHT: Bio -->
+        <div class="about-bio-col">
+          <h1 class="name">Zhuoran (Jolia) Chen</h1>
+          <p class="tagline">Incoming Robotics PhD @ Georgia Tech &nbsp;·&nbsp; NYU Shanghai '26 &nbsp;·&nbsp; Robotics </p>
+
+          <div class="bio">
+            <p>I'm a Computer Science student at <a href="https://shanghai.nyu.edu" target="_blank" rel="noopener">NYU Shanghai</a>, graduating May 2026, and an incoming Robotics PhD student at <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a>, where I will be advised by <a href="https://www.siddkaramcheti.com/" target="_blank" rel="noopener">Prof. Siddharth Karamcheti</a>. My research centers on <strong>human-centered robot learning</strong>. I believe humans are the best teachers for AI: Phase 1 of my vision focuses on enabling robots to learn from humans &mdash; as a data source (multimodal demonstrations), a data coach (guiding targeted collection), and an inference-time guide (real-time corrections). Phase 2 aims for personalized human&ndash;robot interaction, where robots align with individual preferences, from home assistants that learn your habits to creative partners that reflect your style.</p>
+
+            <p>Currently I work with <a href="#" target="_blank" rel="noopener">Prof. Shengjie Wang</a> at <a href="https://shanghai.nyu.edu" target="_blank" rel="noopener">NYU Shanghai</a> on injecting in-context learning into vision-language-action models for long-horizon tasks. Previously I was at NYU's <a href="https://www.lerrelpinto.com" target="_blank" rel="noopener">GRAIL Lab</a> with <a href="https://www.lerrelpinto.com" target="_blank" rel="noopener">Prof. Lerrel Pinto</a>, building systems where robots learn force-sensitive manipulation from human touch. I also worked with <a href="https://whongyi.github.io/" target="_blank" rel="noopener">Prof. Hongyi Wen</a> at <a href="https://shanghai.nyu.edu" target="_blank" rel="noopener">NYU Shanghai</a>'s <a href="#" target="_blank" rel="noopener">MAPS Lab</a>, where I contributed to <a href="https://arxiv.org/abs/2510.18433" target="_blank" rel="noopener">ImageGem</a> (ICCV 2025) and conducted user studies on human-in-the-loop image generation.</p>
+
+            <p>Outside the lab, I am a city-walk enthusiast. I play badminton, run hurdles, and paint. </p>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- 2. News -->
+      <div class="container">
+        <hr class="section-sep" />
+        <h2 class="section-title">News</h2>
+
+        <div class="news-list">
+
+          <div class="news-item">
+            <span class="news-date">May 2026</span>
+            <span class="news-content">Graduated from <a href="https://shanghai.nyu.edu" target="_blank" rel="noopener">NYU Shanghai</a> with a B.S. in Computer Science (Major GPA 4.00/4.00). &#127891;</span>
+          </div>
+
+          <div class="news-item">
+            <span class="news-date">Apr 2026</span>
+            <span class="news-content">Awarded the <strong>Georgia Robotics Fellowship</strong> 2026. &#127942;</span>
+          </div>
+
+          <div class="news-item">
+            <span class="news-date">March 2026</span>
+            <span class="news-content">Thrilled to be joining <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a> as a Robotics PhD student this fall! &#129302;</span>
+          </div>
+
+          <div class="news-item">
+            <span class="news-date">Aug 2025</span>
+            <span class="news-content"><a href="https://arxiv.org/abs/2510.18433" target="_blank" rel="noopener">ImageGem</a> accepted to ICCV 2025&#127881;!</span>
+          </div>
+
+          <div class="news-item">
+            <span class="news-date">June 2025</span>
+            <span class="news-content"><a href="https://arxiv.org/abs/2506.01944" target="_blank" rel="noopener">Feel the Force</a> accepted to RSS Workshop 2025 &#127881;!</span>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- 3. Publications -->
+      <div class="container" id="pub-section">
+        <hr class="section-sep" />
+        <h2 class="section-title">Publications</h2>
+        <p class="equal-contrib-note">* denotes equal contribution</p>
+
+        <!-- Paper 1: Feel the Force -->
+        <div class="pub-card">
+          <div class="pub-cover-wrap">
+            <span class="venue-cover-badge">RSS</span>
+            <video class="pub-cover pub-cover-video" autoplay muted loop playsinline>
+              <source src="assets/publications/feelTheForce.mp4" type="video/mp4">
+            </video>
+            <div class="pub-cover-fallback" style="display:none">FTF</div>
+          </div>
+          <div class="pub-info">
+            <h3 class="pub-title">
+              <a href="https://arxiv.org/abs/2506.01944" target="_blank" rel="noopener">
+                Feel the Force: Contact-Driven Learning from Humans
+              </a>
+            </h3>
+            <p class="pub-authors">
+              Ademi Adeniji*, <strong>Zhuoran Chen</strong>*, Vincent Liu, Venkatesh Pattabiraman,
+              Raunaq Bhirangi, Siddhant Haldar, Pieter Abbeel, Lerrel Pinto
+            </p>
+            <div class="pub-meta">
+              <span class="venue-badge">RSS Workshop 2025</span>
+              <span class="venue-badge">arXiv 2025</span>
+            </div>
+            <div class="pub-actions">
+              <button class="abstract-toggle" data-target="abs-ftf">
+                Abstract <span class="toggle-arrow">&#9662;</span>
+              </button>
+              <a href="https://arxiv.org/abs/2506.01944" class="link-btn" target="_blank" rel="noopener">Paper</a>
+              <a href="https://feel-the-force-ftf.github.io/" class="link-btn" target="_blank" rel="noopener">Project Page</a>
+              <a href="https://github.com/feel-the-force-ftf/feel-the-force" class="link-btn" target="_blank" rel="noopener">Code</a>
+            </div>
+            <div class="abstract" id="abs-ftf">
+              <p>FTF learns force-sensitive manipulation from human tactile demonstrations using a low-cost tactile glove and vision-based hand pose estimation. A closed-loop Transformer policy predicts robot trajectories and contact forces, achieving 77% success across five manipulation tasks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 2: RUKA-v2 -->
+        <div class="pub-card">
+          <div class="pub-cover-wrap">
+            <span class="venue-cover-badge">Under Review</span>
+            <video class="pub-cover pub-cover-video" autoplay muted loop playsinline>
+              <source src="assets/publications/ruka-v2.mp4" type="video/mp4">
+            </video>
+            <div class="pub-cover-fallback" style="display:none">RV2</div>
+          </div>
+          <div class="pub-info">
+            <h3 class="pub-title">
+              <a href="https://arxiv.org/abs/2603.26660" target="_blank" rel="noopener">
+                RUKA-v2: Tendon-Driven Open-Source Dexterous Hand with Wrist and Abduction for Robot Learning
+              </a>
+            </h3>
+            <p class="pub-authors">
+              Xinqi Lucas Liu*, Ruoxi Hu*, Alejandro Ojeda Olarte, <strong>Zhuoran Chen</strong>,
+              Kenny Ma, Charles Cheng Ji, Lerrel Pinto, Raunaq Bhirangi, Irmak Guzey
+            </p>
+            <div class="pub-meta">
+              <span class="venue-badge">Under Review</span>
+              <span class="venue-badge">arXiv March 2026</span>
+            </div>
+            <div class="pub-actions">
+              <button class="abstract-toggle" data-target="abs-ruka">
+                Abstract <span class="toggle-arrow">&#9662;</span>
+              </button>
+              <a href="https://arxiv.org/abs/2603.26660" class="link-btn" target="_blank" rel="noopener">Paper</a>
+              <a href="https://ruka-hand-v2.github.io/" class="link-btn disabled">Project Page</a>
+            </div>
+            <div class="abstract" id="abs-ruka">
+              <p>RUKA-v2 is an open-source tendon-driven dexterous robotic hand with wrist and abduction capabilities. Includes a real-time teleoperation system mapping human arm and hand motion to Franka + RUKA via Meta Quest.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 3: ImageGem -->
+        <div class="pub-card">
+          <div class="pub-cover-wrap">
+            <span class="venue-cover-badge">ICCV</span>
+            <img
+              src="assets/publications/imageGem.png"
+              alt="ImageGem cover"
+              class="pub-cover"
+              onerror="handlePubImgError(this, 'IMG')"
+            />
+            <div class="pub-cover-fallback" style="display:none">IMG</div>
+          </div>
+          <div class="pub-info">
+            <h3 class="pub-title">
+              <a href="https://arxiv.org/abs/2510.18433" target="_blank" rel="noopener">
+                ImageGem: In-the-Wild Generative Image Interaction Dataset for Generative Model Personalization
+              </a>
+            </h3>
+            <p class="pub-authors">
+              Yuanhe Guo*, Linxi Xie*, <strong>Zhuoran Chen</strong>, Kangrui Yu,
+              Ryan Po, Guandao Yang, Gordon Wetzstein, Hongyi Wen
+            </p>
+            <div class="pub-meta">
+              <span class="venue-badge">ICCV 2025</span>
+              <span class="venue-badge">arXiv October 2025</span>
+            </div>
+            <div class="pub-actions">
+              <button class="abstract-toggle" data-target="abs-imagegem">
+                Abstract <span class="toggle-arrow">&#9662;</span>
+              </button>
+              <a href="https://arxiv.org/abs/2510.18433" class="link-btn" target="_blank" rel="noopener">Paper</a>
+              <a href="https://maps-research.github.io/imagegem-iccv2025/" class="link-btn disabled">Project Page</a>
+            </div>
+            <div class="abstract" id="abs-imagegem">
+              <p>ImageGem introduces a dataset for in-the-wild generative image interaction. Built a personalized image retrieval and generative-model recommendation pipeline using collaborative filtering and VLM reranking.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== TAB: PUBLICATIONS (standalone) ===== -->
+    <section id="publications" class="tab-section">
+      <div class="container">
+        <h2 class="section-title">Publications</h2>
+        <p class="equal-contrib-note">* denotes equal contribution</p>
+
+        <!-- Paper 1: Feel the Force -->
+        <div class="pub-card">
+          <div class="pub-cover-wrap">
+            <span class="venue-cover-badge">RSS</span>
+            <video class="pub-cover pub-cover-video" autoplay muted loop playsinline>
+              <source src="assets/publications/feelTheForce.mp4" type="video/mp4">
+            </video>
+            <div class="pub-cover-fallback" style="display:none">FTF</div>
+          </div>
+          <div class="pub-info">
+            <h3 class="pub-title">
+              <a href="https://arxiv.org/abs/2506.01944" target="_blank" rel="noopener">
+                Feel the Force: Contact-Driven Learning from Humans
+              </a>
+            </h3>
+            <p class="pub-authors">
+              Ademi Adeniji*, <strong>Zhuoran Chen</strong>*, Vincent Liu, Venkatesh Pattabiraman,
+              Raunaq Bhirangi, Siddhant Haldar, Pieter Abbeel, Lerrel Pinto
+            </p>
+            <div class="pub-meta">
+              <span class="venue-badge">RSS Workshop 2025</span>
+              <span class="venue-badge">arXiv 2025</span>
+            </div>
+            <div class="pub-actions">
+              <button class="abstract-toggle" data-target="abs-ftf-tab">
+                Abstract <span class="toggle-arrow">&#9662;</span>
+              </button>
+              <a href="https://arxiv.org/abs/2506.01944" class="link-btn" target="_blank" rel="noopener">Paper</a>
+              <a href="https://feel-the-force-ftf.github.io/" class="link-btn" target="_blank" rel="noopener">Project Page</a>
+              <a href="https://github.com/feel-the-force-ftf/feel-the-force" class="link-btn" target="_blank" rel="noopener">Code</a>
+            </div>
+            <div class="abstract" id="abs-ftf-tab">
+              <p>FTF learns force-sensitive manipulation from human tactile demonstrations using a low-cost tactile glove and vision-based hand pose estimation. A closed-loop Transformer policy predicts robot trajectories and contact forces, achieving 77% success across five manipulation tasks.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 2: RUKA-v2 -->
+        <div class="pub-card">
+          <div class="pub-cover-wrap">
+            <span class="venue-cover-badge">Under Review</span>
+            <video class="pub-cover pub-cover-video" autoplay muted loop playsinline>
+              <source src="assets/publications/ruka-v2.mov" type="video/quicktime">
+              <source src="assets/publications/ruka-v2.mp4" type="video/mp4">
+            </video>
+            <div class="pub-cover-fallback" style="display:none">RV2</div>
+          </div>
+          <div class="pub-info">
+            <h3 class="pub-title">
+              <a href="https://arxiv.org/abs/2603.26660" target="_blank" rel="noopener">
+                RUKA-v2: Tendon-Driven Open-Source Dexterous Hand with Wrist and Abduction for Robot Learning
+              </a>
+            </h3>
+            <p class="pub-authors">
+              Xinqi Lucas Liu*, Ruoxi Hu*, Alejandro Ojeda Olarte, <strong>Zhuoran Chen</strong>,
+              Kenny Ma, Charles Cheng Ji, Lerrel Pinto, Raunaq Bhirangi, Irmak Guzey
+            </p>
+            <div class="pub-meta">
+              <span class="venue-badge">Under Review</span>
+              <span class="venue-badge">arXiv March 2026</span>
+            </div>
+            <div class="pub-actions">
+              <button class="abstract-toggle" data-target="abs-ruka-tab">
+                Abstract <span class="toggle-arrow">&#9662;</span>
+              </button>
+              <a href="https://arxiv.org/abs/2603.26660" class="link-btn" target="_blank" rel="noopener">Paper</a>
+              <a href="#" class="link-btn disabled">Project Page</a>
+            </div>
+            <div class="abstract" id="abs-ruka-tab">
+              <p>RUKA-v2 is an open-source tendon-driven dexterous robotic hand with wrist and abduction capabilities. Includes a real-time teleoperation system mapping human arm and hand motion to Franka + RUKA via Meta Quest.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Paper 3: ImageGem -->
+        <div class="pub-card">
+          <div class="pub-cover-wrap">
+            <span class="venue-cover-badge">ICCV</span>
+            <img
+              src="assets/publications/imageGem.png"
+              alt="ImageGem cover"
+              class="pub-cover"
+              onerror="handlePubImgError(this, 'IMG')"
+            />
+            <div class="pub-cover-fallback" style="display:none">IMG</div>
+          </div>
+          <div class="pub-info">
+            <h3 class="pub-title">
+              <a href="https://arxiv.org/abs/2510.18433" target="_blank" rel="noopener">
+                ImageGem: In-the-Wild Generative Image Interaction Dataset for Generative Model Personalization
+              </a>
+            </h3>
+            <p class="pub-authors">
+              Yuanhe Guo*, Linxi Xie*, <strong>Zhuoran Chen</strong>, Kangrui Yu,
+              Ryan Po, Guandao Yang, Gordon Wetzstein, Hongyi Wen
+            </p>
+            <div class="pub-meta">
+              <span class="venue-badge">ICCV 2025</span>
+              <span class="venue-badge">arXiv October 2025</span>
+            </div>
+            <div class="pub-actions">
+              <button class="abstract-toggle" data-target="abs-imagegem-tab">
+                Abstract <span class="toggle-arrow">&#9662;</span>
+              </button>
+              <a href="https://arxiv.org/abs/2510.18433" class="link-btn" target="_blank" rel="noopener">Paper</a>
+              <a href="#" class="link-btn disabled">Project Page</a>
+            </div>
+            <div class="abstract" id="abs-imagegem-tab">
+              <p>ImageGem introduces a dataset for in-the-wild generative image interaction. Built a personalized image retrieval and generative-model recommendation pipeline using collaborative filtering and VLM reranking.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== TAB: CV ===== -->
+    <section id="cv" class="tab-section">
+      <div class="container">
+        <h2 class="section-title">CV</h2>
+
+        <!-- Split Experience Timeline -->
+        <div class="exp-split">
+
+          <!-- Left: Research -->
+          <div class="exp-col">
+            <h3 class="exp-col-header">Research Experience</h3>
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-period">Sep 2025 &ndash; Present</div>
+                  <div class="timeline-role">Research Assistant &nbsp;&middot;&nbsp; NYU Shanghai</div>
+                  <div class="timeline-advisor">Advisor: <a href="#" target="_blank" rel="noopener">Prof. Shengjie Wang</a></div>
+                  <ul class="timeline-details">
+                    <li>VLA models + in-context learning for long-horizon robotic tasks</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-period">Dec 2024 &ndash; Aug 2025</div>
+                  <div class="timeline-role">Research Assistant &nbsp;&middot;&nbsp; NYU GRAIL Lab (New York)</div>
+                  <div class="timeline-advisor">Advisor: <a href="https://www.lerrelpinto.com" target="_blank" rel="noopener">Prof. Lerrel Pinto</a></div>
+                  <ul class="timeline-details">
+                    <li>Feel the Force (co-first author)</li>
+                    <li>RUKA-v2 teleoperation system</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-period">Jan 2024 &ndash; May 2025</div>
+                  <div class="timeline-role">Research Assistant &nbsp;&middot;&nbsp; NYU Shanghai MAPS Lab</div>
+                  <div class="timeline-advisor">Advisor: <a href="https://whongyi.github.io/" target="_blank" rel="noopener">Prof. Hongyi Wen</a></div>
+                  <ul class="timeline-details">
+                    <li>ImageGem (second author)</li>
+                    <li>Human-in-the-Loop Image Generation user study</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Right: Teaching -->
+          <div class="exp-col">
+            <h3 class="exp-col-header">Teaching Experience</h3>
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-period">Mar 2026 &ndash; Present</div>
+                  <div class="timeline-role">Teaching Assistant &nbsp;&middot;&nbsp; NYU Shanghai</div>
+                  <div class="timeline-advisor">Artificial Intelligence for Business &nbsp;&middot;&nbsp; MSDABC Program</div>
+                  <ul class="timeline-details">
+                    <li>Course assistance and student guidance</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-period">Jan 2026 &ndash; Present</div>
+                  <div class="timeline-role">Learning Assistant &nbsp;&middot;&nbsp; NYU Shanghai</div>
+                  <div class="timeline-advisor">Data Structures &nbsp;&middot;&nbsp; Introduction to Computer Programming</div>
+                  <ul class="timeline-details">
+                    <li>Debugging support and problem-solving guidance</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <div class="timeline-period">Sep 2022 &ndash; May 2023</div>
+                  <div class="timeline-role">Teaching Tutor &nbsp;&middot;&nbsp; Stepping Stone Program</div>
+                  <ul class="timeline-details">
+                    <li>Taught programming to primary school students at local community centers weekly</li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Awards -->
+        <div class="misc-section">
+          <h3 class="subsection-title">Awards &amp; Honors</h3>
+          <div class="awards-full-list">
+            <div class="award-row">
+              <div class="award-detail">
+                <span class="award-name">Georgia Robotics Fellowship</span>
+                <span class="award-year">2026</span>
+              </div>
+            </div>
+            <div class="award-row">
+              <div class="award-detail">
+                <span class="award-name">China National Scholarship</span>
+                <span class="award-year">2025</span>
+              </div>
+            </div>
+            <div class="award-row">
+              <div class="award-detail">
+                <span class="award-name">NYU Shanghai Recognition Award</span>
+                <span class="award-year">2025</span>
+              </div>
+            </div>
+            <div class="award-row">
+              <div class="award-detail">
+                <span class="award-name">Outstanding Capstone Poster Award</span>
+                <span class="award-year">2025</span>
+              </div>
+            </div>
+            <div class="award-row">
+              <div class="award-detail">
+                <span class="award-name">Dean Undergraduate Research Funding</span>
+                <span class="award-year">2023, 2024</span>
+              </div>
+            </div>
+            <div class="award-row">
+              <div class="award-detail">
+                <span class="award-name">Dean's Honors List</span>
+                <span class="award-year">2023 &ndash; 2025</span>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- 
+      
+        <div class="misc-section">
+          <h3 class="subsection-title">Skills</h3>
+          <div class="skills-group">
+            <div class="skill-row">
+              <span class="skill-label">Languages</span>
+              <div class="skill-pills">
+                <span class="pill">Python</span>
+                <span class="pill">C</span>
+                <span class="pill">HTML / CSS / JS</span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-label">ML / Vision</span>
+              <div class="skill-pills">
+                <span class="pill">PyTorch</span>
+                <span class="pill">OpenCV</span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-label">Robotics</span>
+              <div class="skill-pills">
+                <span class="pill">ROS</span>
+                <span class="pill">Docker</span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-label">Tools</span>
+              <div class="skill-pills">
+                <span class="pill">Git</span>
+                <span class="pill">Linux</span>
+                <span class="pill">Streamlit</span>
+              </div>
+            </div>
+            <div class="skill-row">
+              <span class="skill-label">Human Languages</span>
+              <div class="skill-pills">
+                <span class="pill">English (Fluent)</span>
+                <span class="pill">Cantonese (Native)</span>
+                <span class="pill">Mandarin (Native)</span>
+              </div>
+            </div>
+          </div>
+        </div> 
+
+    
+        <div class="misc-section">
+          <h3 class="subsection-title">Leadership &amp; Service</h3>
+          <ul class="service-list">
+            <li>Campus Ambassador, PwC China &mdash; Top 10 KPI in South China, managed 400+ member career group &nbsp;&middot;&nbsp; 2023</li>
+            <li>Project Leader, Academic Resource Center &mdash; led peer academic support initiative &nbsp;&middot;&nbsp; 2023</li>
+            <li>StarIntern Initiative &mdash; grew student community 0&rarr;245 members, 20+ startup partnerships &nbsp;&middot;&nbsp; 2023</li>
+            <li>Volunteer, Turtle Conservation &amp; Education Center, Bali &mdash; marine conservation &amp; turtle rehab &nbsp;&middot;&nbsp; June 2023</li>
+            <li>Dean's Service Corps &ndash; Elderly Care Team &mdash; advocacy video on AI and elderly digital inclusion &nbsp;&middot;&nbsp; 2022</li>
+          </ul>
+        </div>  
+-->
+
+        <!-- Course Projects -->
+        <div class="misc-section">
+          <h3 class="subsection-title">Course Projects</h3>
+          <div class="projects-grid">
+
+            <div class="project-card">
+              <h4 class="project-title">Style Unlearning: Parameter-Efficient Modules for Efficient Style Removal</h4>
+              <p class="project-course">Computer Vision (Grad) &nbsp;&middot;&nbsp; <a href="#" target="_blank" rel="noopener">Prof. Saining Xie</a></p>
+              <p class="project-term">NYU &nbsp;&middot;&nbsp; Fall 2024</p>
+              <p class="project-desc">Compared W2W framework vs LoRA Negation for style unlearning; verified with CLIP + VLM metrics.</p>
+              <a href="https://github.com/joliachen/CV-Final-Style-Unlearning" class="link-btn small" target="_blank" rel="noopener">GitHub</a>
+            </div>
+
+            <div class="project-card">
+              <h4 class="project-title">Computer Graphics Final Project</h4>
+              <p class="project-course">Computer Graphics (Grad) &nbsp;&middot;&nbsp; <a href="#" target="_blank" rel="noopener">Prof. Ken Perlin</a></p>
+              <p class="project-term">NYU &nbsp;&middot;&nbsp; Fall 2024</p>
+              <p class="project-desc">Interactive 3D web app using raw WebGL &mdash; 3D modeling, animation, real-time rendering.</p>
+              <a href="https://github.com/joliachen/Computer-Graphics-Final-Project" class="link-btn small" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.youtube.com/watch?v=M6d8OuTpxds" class="link-btn small" target="_blank" rel="noopener">Demo Video</a>
+            </div>
+
+            <div class="project-card">
+              <h4 class="project-title">Evaluation Methods on Text Summarization</h4>
+              <p class="project-course">NLP &nbsp;&middot;&nbsp; <a href="#" target="_blank" rel="noopener">Prof. Chen Zhao</a></p>
+              <p class="project-term">NYU Shanghai &nbsp;&middot;&nbsp; Spring 2024</p>
+              <p class="project-desc">Evaluated GPT-3.5/4 summarization with ROUGE, BERTScore, and human assessment.</p>
+            </div>
+
+            <div class="project-card">
+              <h4 class="project-title">Audio Classification using Deep Learning</h4>
+              <p class="project-course">Machine Learning &nbsp;&middot;&nbsp; <a href="#" target="_blank" rel="noopener">Prof. Yik-Cheung Tam</a></p>
+              <p class="project-term">NYU Shanghai &nbsp;&middot;&nbsp; Spring 2024</p>
+              <p class="project-desc">End-to-end audio classification with Mel spectrograms, MFCCs, CNN models &mdash; <strong>79.6% test accuracy</strong>.</p>
+              <a href="https://github.com/joliachen/Machine-Learning-Final-Competition" class="link-btn small" target="_blank" rel="noopener">GitHub</a>
+            </div>
+
+            <div class="project-card">
+              <h4 class="project-title">Multi-function Chat System with GUI</h4>
+              <p class="project-course">Intro CS &nbsp;&middot;&nbsp; <a href="#" target="_blank" rel="noopener">Prof. Xianbin Gu</a></p>
+              <p class="project-term">NYU Shanghai &nbsp;&middot;&nbsp; Fall 2023</p>
+              <p class="project-desc">GUI chat app with RSA encryption, login, ELO image rating, PyGame Flappy Bird module.</p>
+              <a href="https://github.com/joliachen/ICS-Final-Project" class="link-btn small" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://youtu.be/Xuh4mukh42k?si=fFSO1MvFgZHIHmHH" class="link-btn small" target="_blank" rel="noopener">Demo Video</a>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== TAB: MISC (personal) ===== -->
+    <section id="misc" class="tab-section">
+      <div class="container">
+        <h2 class="section-title">Misc</h2>
+        <p class="section-subtitle">The non-academic side of me.</p>
+
+        <!-- Interests -->
+        <div class="misc-section">
+          <h3 class="subsection-title">Interests</h3>
+          <div class="interests">
+            <span class="interest-pill">&#128694; City walk</span>
+            <span class="interest-pill">&#127939; Running &amp; Hurdling</span>
+            <span class="interest-pill">&#127992; Badminton</span>
+            <span class="interest-pill">&#127912; Painting</span>
+          </div>
+        </div>
+
+        <!-- Speaking Languages -->
+        <div class="misc-section">
+          <h3 class="subsection-title">Speaking Languages</h3>
+          <div class="interests">
+            <span class="interest-pill">English &mdash; Fluent</span>
+            <span class="interest-pill">Cantonese &mdash; Native</span>
+            <span class="interest-pill">Mandarin &mdash; Native</span>
+          </div>
+        </div>
+
+        <!-- Memes -->
+        <div class="misc-section">
+          <h3 class="subsection-title">Memes I like</h3>
+          <div class="meme-grid">
+            <div class="meme-card meme-placeholder">
+              <span class="meme-plus">&#65291;</span>
+              <span class="meme-label">add a meme</span>
+            </div>
+            <div class="meme-card meme-placeholder">
+              <span class="meme-plus">&#65291;</span>
+              <span class="meme-label">add a meme</span>
+            </div>
+            <div class="meme-card meme-placeholder">
+              <span class="meme-plus">&#65291;</span>
+              <span class="meme-label">add a meme</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Sister's portrait -->
+        <div class="misc-section">
+          <h3 class="subsection-title">Portrait by my sister &#128149;</h3>
+          <div class="sis-portrait-wrap">
+            <img
+              src="assets/misc/sis_painted_profile.jpg"
+              alt="Portrait painted by my sister"
+              class="sis-portrait"
+              onerror="this.style.display='none'"
+            />
+            <p class="sis-portrait-caption">painted by my sis &hearts;</p>
+          </div>
+        </div>
+
+        <!-- Walk -->
+        <div class="misc-section">
+          <h3 class="subsection-title">&#25214;&#25105;&#25955;&#27493; &nbsp;&middot;&nbsp; Let's take a walk</h3>
+          <div class="walk-card">
+            <p class="walk-text">If you're in Shanghai or Atlanta and want to explore a neighbourhood, or just walk and talk &mdash; send me an email. Always down.</p>
+            <a href="mailto:zc2745@nyu.edu" class="social-btn walk-btn">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>zc2745@nyu.edu</span>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

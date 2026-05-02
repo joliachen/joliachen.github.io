@@ -1285,3 +1285,74 @@ ul { list-style: none; }
   .exp-split::after { display: none; }
   .exp-col + .exp-col { padding-top: 2rem; }
 }
+
+/* ============================================================
+   NAME LEGAL LINE
+   ============================================================ */
+.name-legal {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: -0.15rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ============================================================
+   PUBLICATION YEAR GROUPS
+   ============================================================ */
+.pub-year-group {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0 1.5rem;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.pub-list {
+  min-width: 0;
+}
+
+.pub-year-label {
+  font-family: 'Lora', serif;
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text-muted);
+  opacity: 0.18;
+  padding-top: 1.5rem;
+  user-select: none;
+  letter-spacing: -0.02em;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .pub-year-group {
+    grid-template-columns: 1fr;
+  }
+  .pub-year-label {
+    display: none;
+  }
+}
+
+/* ============================================================
+   FRIENDS SECTION
+   ============================================================ */
+.friends-intro {
+  font-size: 0.92rem;
+  color: var(--text-muted);
+  font-style: italic;
+  margin-bottom: 0.9rem;
+}
+
+.friends-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  list-style: none;
+  padding-left: 0;
+}
+
+.friend-item {
+  font-size: 0.92rem;
+  color: var(--text);
+}

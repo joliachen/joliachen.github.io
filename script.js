@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
   /* ============================================================
      TAB SWITCHING
      ============================================================ */
-  var validTabs = ['about', 'publications', 'cv', 'misc'];
+  var validTabs = ['about', 'publications', 'experience', 'awards', 'projects', 'misc'];
 
   function activateTab(tabId) {
     if (!validTabs.includes(tabId)) tabId = 'about';

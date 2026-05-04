@@ -13,3 +13,4 @@ vendor
 .idea_site/
 .jekyll-cache/
 .cache/
+assets/*.pdf

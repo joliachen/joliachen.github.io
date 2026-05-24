@@ -528,6 +528,17 @@ ul { list-style: none; }
   border-color: rgba(58, 91, 217, 0.2);
 }
 
+.spotlight-badge {
+  background: rgba(234, 179, 8, 0.12);
+  color: #ca8a04;
+  border-color: rgba(234, 179, 8, 0.3);
+}
+[data-theme="light"] .spotlight-badge {
+  background: rgba(234, 179, 8, 0.1);
+  color: #a16207;
+  border-color: rgba(234, 179, 8, 0.35);
+}
+
 .pub-actions {
   display: flex;
   gap: 0.4rem;

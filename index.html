@@ -142,6 +142,20 @@
         <h2 class="section-title">News</h2>
 
         <div class="news-list">
+          <div class="news-item">
+            <span class="news-date">Sep 2026</span>
+            <span class="news-content"><a href="https://arxiv.org/abs/2603.26660" target="_blank" rel="noopener">RUKA-v2</a> accepted to IEEE-RAS Humanoids 2026! &#127881;</span>
+          </div>
+
+          <div class="news-item">
+            <span class="news-date">Sep 2026</span>
+            <span class="news-content">Thrilled to be joining <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a> as a Robotics PhD student this fall! &#129302;</span>
+          </div>
+
+          <div class="news-item">
+            <span class="news-date">July 2026</span>
+            <span class="news-content"><a href="https://arxiv.org/abs/2607.08283" target="_blank" rel="noopener">TFP</a> accepted to RSS 2026 SemRob Workshop! &#127881;</span>
+          </div>
 
           <div class="news-item">
             <span class="news-date">May 2026</span>
@@ -153,10 +167,6 @@
             <span class="news-content">Awarded the <strong>Georgia Robotics Fellowship</strong> 2026. &#127942;</span>
           </div>
 
-          <div class="news-item">
-            <span class="news-date">March 2026</span>
-            <span class="news-content">Thrilled to be joining <a href="https://www.gatech.edu" target="_blank" rel="noopener">Georgia Institute of Technology</a> as a Robotics PhD student this fall! &#129302;</span>
-          </div>
 
           <div class="news-item">
             <span class="news-date">Aug 2025</span>
@@ -214,6 +224,44 @@
                 </div>
                 <div class="abstract" id="abs-ruka">
                   <p>Lack of accessible and dexterous robot hardware has been a significant bottleneck to achieving human-level dexterity in robots. Last year, we released Ruka, a fully open-sourced, tendon-driven humanoid hand with 11 degrees of freedom &mdash; 2 per finger and 3 at the thumb &mdash; buildable for under $1,300. Despite these contributions, Ruka lacked two degrees of freedom essential for closely imitating human behavior: wrist mobility and finger adduction/abduction. In this paper, we introduce Ruka-v2: a fully open-sourced, tendon-driven humanoid hand featuring a decoupled 2-DOF parallel wrist and abduction/adduction at the fingers. The parallel wrist adds smooth, independent flexion/extension and radial/ulnar deviation, enabling manipulation in confined environments such as cabinets. Abduction enables motions such as grasping thin objects, in-hand rotation, and calligraphy. We evaluate Ruka-v2 against Ruka through user studies on teleoperated tasks, finding a 51.3% reduction in completion time and a 21.2% increase in success rate. We further demonstrate its full range of applications for robot learning: bimanual and single-arm teleoperation across 13 dexterous tasks, and autonomous policy learning on 3 tasks.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- TFP -->
+            <div class="pub-card">
+              <div class="pub-cover-wrap">
+                <span class="venue-cover-badge">RSS 2026</span>
+                <img
+                  src="assets/publications/tfp.jpg"
+                  alt="TFP overview figure"
+                  class="pub-cover"
+                  onerror="handlePubImgError(this, 'TFP')"
+                />
+                <div class="pub-cover-fallback" style="display:none">TFP</div>
+              </div>
+              <div class="pub-info">
+                <h3 class="pub-title">
+                  <a href="https://arxiv.org/abs/2607.08283" target="_blank" rel="noopener">
+                    TFP: Temporally Conditioned Memory-Fusion Policies for Visuomotor Learning
+                  </a>
+                </h3>
+                <p class="pub-authors">
+                  Yushen Liang*, Yue Peng*, Baosheng Jin*, Tianluo Zhang, Xinyu Zhang,
+                  Shuyi Zhou, <strong>Zhuoran Chen</strong>, Xinqi Liu, Shenji Wan
+                </p>
+                <div class="pub-meta">
+                  <span class="venue-badge">RSS 2026 SemRob Workshop</span>
+                </div>
+                <div class="pub-actions">
+                  <button class="abstract-toggle" data-target="abs-tfp">
+                    Abstract <span class="toggle-arrow">&#9662;</span>
+                  </button>
+                  <a href="https://arxiv.org/abs/2607.08283" class="link-btn" target="_blank" rel="noopener">Paper</a>
+                  <a href="https://github.com/Mirage415/TFP-Temporally-conditioned-Memory-Fusion-Policies-for-Visuomotor-Learning" class="link-btn" target="_blank" rel="noopener">Code</a>
+                </div>
+                <div class="abstract" id="abs-tfp">
+                  <p>Vision&ndash;Language&ndash;Action (VLA) policies such as &pi;<sub>0.5</sub> and OpenVLA perform well on many manipulation tasks, but they are often reactive: the next action is predicted from the current observation, instruction, and proprioceptive state. This assumption breaks down in stage-dependent manipulation, where visually similar states may require different actions depending on latent task progress and previous interaction outcomes. We argue that such tasks require not only memory, but dynamics-aware belief updates: the policy should preserve task progress during stable or occluded phases and revise its belief near contact, release, or subgoal transitions. We introduce Temporally Conditioned Memory-Fusion Policies (TFP), a lightweight memory-action framework for VLA backbones. TFP maintains an episode-local task-progress belief with Liquid Time-Constant dynamics and injects the updated belief directly into the flow-matching action decoder through adaptive modulation. This lets temporally accumulated context shape the generated action chunk, rather than serving only as passive history context. With a 3.3B-parameter model, TFP improves the average success rate from 96.9% to 98.75% on LIBERO and from 91.4% to 93.77% on LIBERO-plus. On the memory-focused MIKASA ShellGameTouch diagnostic, TFP achieves success up to 75.0%. Mechanistic analyses show that write-gain changes near manipulation events are about 6 times larger than far non-event phases, and hidden-state interventions show that the belief causally modulates generated action chunks. These results suggest that compact, event-sensitive memory dynamics can improve VLA policies under occlusion, visual perturbation, and stage-dependent task structure.</p>
                 </div>
               </div>
             </div>
@@ -353,6 +401,44 @@
                 </div>
                 <div class="abstract" id="abs-ruka-tab">
                   <p>Lack of accessible and dexterous robot hardware has been a significant bottleneck to achieving human-level dexterity in robots. Last year, we released Ruka, a fully open-sourced, tendon-driven humanoid hand with 11 degrees of freedom &mdash; 2 per finger and 3 at the thumb &mdash; buildable for under $1,300. Despite these contributions, Ruka lacked two degrees of freedom essential for closely imitating human behavior: wrist mobility and finger adduction/abduction. In this paper, we introduce Ruka-v2: a fully open-sourced, tendon-driven humanoid hand featuring a decoupled 2-DOF parallel wrist and abduction/adduction at the fingers. The parallel wrist adds smooth, independent flexion/extension and radial/ulnar deviation, enabling manipulation in confined environments such as cabinets. Abduction enables motions such as grasping thin objects, in-hand rotation, and calligraphy. We evaluate Ruka-v2 against Ruka through user studies on teleoperated tasks, finding a 51.3% reduction in completion time and a 21.2% increase in success rate. We further demonstrate its full range of applications for robot learning: bimanual and single-arm teleoperation across 13 dexterous tasks, and autonomous policy learning on 3 tasks.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- TFP -->
+            <div class="pub-card">
+              <div class="pub-cover-wrap">
+                <span class="venue-cover-badge">RSS 2026</span>
+                <img
+                  src="assets/publications/tfp.jpg"
+                  alt="TFP overview figure"
+                  class="pub-cover"
+                  onerror="handlePubImgError(this, 'TFP')"
+                />
+                <div class="pub-cover-fallback" style="display:none">TFP</div>
+              </div>
+              <div class="pub-info">
+                <h3 class="pub-title">
+                  <a href="https://arxiv.org/abs/2607.08283" target="_blank" rel="noopener">
+                    TFP: Temporally Conditioned Memory-Fusion Policies for Visuomotor Learning
+                  </a>
+                </h3>
+                <p class="pub-authors">
+                  Yushen Liang*, Yue Peng*, Baosheng Jin*, Tianluo Zhang, Xinyu Zhang,
+                  Shuyi Zhou, <strong>Zhuoran Chen</strong>, Xinqi Liu, Shenji Wan
+                </p>
+                <div class="pub-meta">
+                  <span class="venue-badge">RSS 2026 SemRob Workshop</span>
+                </div>
+                <div class="pub-actions">
+                  <button class="abstract-toggle" data-target="abs-tfp-tab">
+                    Abstract <span class="toggle-arrow">&#9662;</span>
+                  </button>
+                  <a href="https://arxiv.org/abs/2607.08283" class="link-btn" target="_blank" rel="noopener">Paper</a>
+                  <a href="https://github.com/Mirage415/TFP-Temporally-conditioned-Memory-Fusion-Policies-for-Visuomotor-Learning" class="link-btn" target="_blank" rel="noopener">Code</a>
+                </div>
+                <div class="abstract" id="abs-tfp-tab">
+                  <p>Vision&ndash;Language&ndash;Action (VLA) policies such as &pi;<sub>0.5</sub> and OpenVLA perform well on many manipulation tasks, but they are often reactive: the next action is predicted from the current observation, instruction, and proprioceptive state. This assumption breaks down in stage-dependent manipulation, where visually similar states may require different actions depending on latent task progress and previous interaction outcomes. We argue that such tasks require not only memory, but dynamics-aware belief updates: the policy should preserve task progress during stable or occluded phases and revise its belief near contact, release, or subgoal transitions. We introduce Temporally Conditioned Memory-Fusion Policies (TFP), a lightweight memory-action framework for VLA backbones. TFP maintains an episode-local task-progress belief with Liquid Time-Constant dynamics and injects the updated belief directly into the flow-matching action decoder through adaptive modulation. This lets temporally accumulated context shape the generated action chunk, rather than serving only as passive history context. With a 3.3B-parameter model, TFP improves the average success rate from 96.9% to 98.75% on LIBERO and from 91.4% to 93.77% on LIBERO-plus. On the memory-focused MIKASA ShellGameTouch diagnostic, TFP achieves success up to 75.0%. Mechanistic analyses show that write-gain changes near manipulation events are about 6 times larger than far non-event phases, and hidden-state interventions show that the belief causally modulates generated action chunks. These results suggest that compact, event-sensitive memory dynamics can improve VLA policies under occlusion, visual perturbation, and stage-dependent task structure.</p>
                 </div>
               </div>
             </div>
@@ -694,12 +780,20 @@
         <div class="misc-section">
           <h3 class="subsection-title">Portrait </h3>
           <div class="sis-portrait-wrap">
-            <img
-              src="assets/misc/sis_painted_profile.JPG"
-              alt="Portrait painted by my sister"
-              class="sis-portrait"
-              onerror="this.style.display='none'"
-            />
+            <div class="sis-portrait-row">
+              <img
+                src="assets/misc/sis_painted_profile.jpg"
+                alt="Portrait painted by my sister"
+                class="sis-portrait"
+                onerror="this.style.display='none'"
+              />
+              <img
+                src="assets/misc/sis_painted_profile_2.jpg"
+                alt="Another portrait painted by my sister"
+                class="sis-portrait"
+                onerror="this.style.display='none'"
+              />
+            </div>
             <p class="sis-portrait-caption">painted by my sister &hearts;</p>
           </div>
         </div>
@@ -718,7 +812,7 @@
 
         <!-- badminton -->
         <div class="misc-section">
-          <h3 class="subsection-title">🏸; &nbsp;&middot;&nbsp; Open to badminton / citywalk</h3>
+          <h3 class="subsection-title">🏸 🚶‍♀️‍➡️ &nbsp;&middot;&nbsp; Open to badminton / citywalk</h3>
           <div class="walk-card">
             <p class="walk-text">If you are in Atlanta and want to play badminton, or just walk and talk &mdash; send me an email. Always down :)</p>
             <a href="mailto:zchen3135@gatech.edu" class="social-btn walk-btn">
